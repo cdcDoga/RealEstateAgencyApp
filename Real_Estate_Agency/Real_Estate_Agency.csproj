@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1D21F8C-BC3D-4DF9-A998-39B7C43024C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Real_Estate_Agency</RootNamespace>
+    <AssemblyName>Real_Estate_Agency</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUpdateContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpdateContract.Designer.cs">
+      <DependentUpon>AddUpdateContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUpdateCustomer.Designer.cs">
+      <DependentUpon>addUpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUpdateEstate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpdateEstate.Designer.cs">
+      <DependentUpon>AddUpdateEstate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contractsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contractsFrm.Designer.cs">
+      <DependentUpon>contractsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customersFrm.Designer.cs">
+      <DependentUpon>customersFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estatesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estatesFrm.Designer.cs">
+      <DependentUpon>estatesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpFrm.Designer.cs">
+      <DependentUpon>helpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help_for_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help_for_customer.Designer.cs">
+      <DependentUpon>help_for_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help_for_estateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help_for_estateFrm.Designer.cs">
+      <DependentUpon>help_for_estateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginFrm.Designer.cs">
+      <DependentUpon>loginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainFrm.Designer.cs">
+      <DependentUpon>mainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddUpdateContract.resx">
+      <DependentUpon>AddUpdateContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUpdateCustomer.resx">
+      <DependentUpon>addUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUpdateEstate.resx">
+      <DependentUpon>AddUpdateEstate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contractsFrm.resx">
+      <DependentUpon>contractsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customersFrm.resx">
+      <DependentUpon>customersFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estatesFrm.resx">
+      <DependentUpon>estatesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpFrm.resx">
+      <DependentUpon>helpFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help_for_customer.resx">
+      <DependentUpon>help_for_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help_for_estateFrm.resx">
+      <DependentUpon>help_for_estateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginFrm.resx">
+      <DependentUpon>loginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainFrm.resx">
+      <DependentUpon>mainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
